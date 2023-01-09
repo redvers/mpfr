@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./renderstructs.xml"/>
+<xi:include href="./mpfr.xml"/>
+<structs>
+    <struct name="Smpfr" id="_408" size="256" align="64" fid="f4" lineno="224">
+    <field name="_mpfr_prec'" id="_782" type="I64" fieldid="_403" offset="0" fid="f4" line="225"/>
+    <field name="_mpfr_sign'" id="_783" type="I32" fieldid="_405" offset="64" fid="f4" line="226"/>
+    <field name="_mpfr_exp'" id="_784" type="I64" fieldid="_406" offset="128" fid="f4" line="227"/>
+    <field name="_mpfr_d'" id="_785" type="Pointer[U64]" fieldid="_732" offset="192" fid="f4" line="228"/>
+  </struct>
+</structs>
+</castxml2pony>
+

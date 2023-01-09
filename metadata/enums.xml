@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./mpfr.xml"/>
+<enums>
+  <enum id="_401" name="Mpfrrndt">
+    <enummember name="MPFRRNDN" init="0"/>,
+    <enummember name="MPFRRNDZ" init="1"/>,
+    <enummember name="MPFRRNDU" init="2"/>,
+    <enummember name="MPFRRNDD" init="3"/>,
+    <enummember name="MPFRRNDA" init="4"/>,
+    <enummember name="MPFRRNDF" init="5"/>,
+    <enummember name="MPFRRNDNA" init="-1"/>
+  </enum>
+
+  <enum id="_413" name="Mpfrkindt">
+    <enummember name="MPFRNANKIND" init="0"/>,
+    <enummember name="MPFRINFKIND" init="1"/>,
+    <enummember name="MPFRZEROKIND" init="2"/>,
+    <enummember name="MPFRREGULARKIND" init="3"/>
+  </enum>
+
+  <enum id="_415" name="Mpfrfreecachet">
+    <enummember name="MPFRFREELOCALCACHE" init="1"/>,
+    <enummember name="MPFRFREEGLOBALCACHE" init="2"/>
+  </enum>
+</enums>
+</castxml2pony>
+

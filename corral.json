@@ -1,0 +1,12 @@
+{
+  "packages": [ "mpfr" ],
+  "deps": [],
+  "info": {
+    "description": "Pony binding to GNU mpfr",
+    "homepage": "https://redvers.github.io/mpfr",
+    "license": "",
+    "documentation_url": "https://redvers.github.io/mpfr",
+    "version": "",
+    "name": "mpfr"
+  }
+}

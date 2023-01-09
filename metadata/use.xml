@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./renderuse.xml"/>
+<xi:include href="./usetypes.xml"/>
+<xi:include href="./mpfr.xml"/>
+<uses>
+     <use id="_417" name="mpfr_get_version"
+     ponyname="mpfr_get_version"
+     fid="f4"
+     lineno="378"
+     rv="String">
+     <useargs/>
+  </use>
+  <use id="_418" name="mpfr_get_patches"
+     ponyname="mpfr_get_patches"
+     fid="f4"
+     lineno="379"
+     rv="String">
+     <useargs/>
+  </use>
+  <use id="_419" name="mpfr_buildopt_tls_p"
+     ponyname="mpfr_buildopt_tls_p"
+     fid="f4"
+     lineno="381"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_420" name="mpfr_buildopt_float128_p"
+     ponyname="mpfr_buildopt_float128_p"
+     fid="f4"
+     lineno="382"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_421" name="mpfr_buildopt_decimal_p"
+     ponyname="mpfr_buildopt_decimal_p"
+     fid="f4"
+     lineno="383"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_422" name="mpfr_buildopt_gmpinternals_p"
+     ponyname="mpfr_buildopt_gmpinternals_p"
+     fid="f4"
+     lineno="384"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_423" name="mpfr_buildopt_sharedcache_p"
+     ponyname="mpfr_buildopt_sharedcache_p"
+     fid="f4"
+     lineno="385"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_424" name="mpfr_buildopt_tune_case"
+     ponyname="mpfr_buildopt_tune_case"
+     fid="f4"
+     lineno="387"
+     rv="String">
+     <useargs/>
+  </use>
+  <use id="_425" name="mpfr_get_emin"
+     ponyname="mpfr_get_emin"
+     fid="f4"
+     lineno="389"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_426" name="mpfr_set_emin"
+     ponyname="mpfr_set_emin"
+     fid="f4"
+     lineno="390"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_427" name="mpfr_get_emin_min"
+     ponyname="mpfr_get_emin_min"
+     fid="f4"
+     lineno="391"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_428" name="mpfr_get_emin_max"
+     ponyname="mpfr_get_emin_max"
+     fid="f4"
+     lineno="392"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_429" name="mpfr_get_emax"
+     ponyname="mpfr_get_emax"
+     fid="f4"
+     lineno="393"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_430" name="mpfr_set_emax"
+     ponyname="mpfr_set_emax"
+     fid="f4"
+     lineno="394"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_431" name="mpfr_get_emax_min"
+     ponyname="mpfr_get_emax_min"
+     fid="f4"
+     lineno="395"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_432" name="mpfr_get_emax_max"
+     ponyname="mpfr_get_emax_max"
+     fid="f4"
+     lineno="396"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_433" name="mpfr_set_default_rounding_mode"
+     ponyname="mpfr_set_default_rounding_mode"
+     fid="f4"
+     lineno="398"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_434" name="mpfr_get_default_rounding_mode"
+     ponyname="mpfr_get_default_rounding_mode"
+     fid="f4"
+     lineno="399"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_435" name="mpfr_print_rnd_mode"
+     ponyname="mpfr_print_rnd_mode"
+     fid="f4"
+     lineno="400"
+     rv="String">
+     <useargs>
+       <usearg name="parg0" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_436" name="mpfr_clear_flags"
+     ponyname="mpfr_clear_flags"
+     fid="f4"
+     lineno="402"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_437" name="mpfr_clear_underflow"
+     ponyname="mpfr_clear_underflow"
+     fid="f4"
+     lineno="403"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_438" name="mpfr_clear_overflow"
+     ponyname="mpfr_clear_overflow"
+     fid="f4"
+     lineno="404"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_439" name="mpfr_clear_divby0"
+     ponyname="mpfr_clear_divby0"
+     fid="f4"
+     lineno="405"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_440" name="mpfr_clear_nanflag"
+     ponyname="mpfr_clear_nanflag"
+     fid="f4"
+     lineno="406"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_441" name="mpfr_clear_inexflag"
+     ponyname="mpfr_clear_inexflag"
+     fid="f4"
+     lineno="407"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_442" name="mpfr_clear_erangeflag"
+     ponyname="mpfr_clear_erangeflag"
+     fid="f4"
+     lineno="408"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_443" name="mpfr_set_underflow"
+     ponyname="mpfr_set_underflow"
+     fid="f4"
+     lineno="410"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_444" name="mpfr_set_overflow"
+     ponyname="mpfr_set_overflow"
+     fid="f4"
+     lineno="411"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_445" name="mpfr_set_divby0"
+     ponyname="mpfr_set_divby0"
+     fid="f4"
+     lineno="412"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_446" name="mpfr_set_nanflag"
+     ponyname="mpfr_set_nanflag"
+     fid="f4"
+     lineno="413"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_447" name="mpfr_set_inexflag"
+     ponyname="mpfr_set_inexflag"
+     fid="f4"
+     lineno="414"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_448" name="mpfr_set_erangeflag"
+     ponyname="mpfr_set_erangeflag"
+     fid="f4"
+     lineno="415"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_449" name="mpfr_underflow_p"
+     ponyname="mpfr_underflow_p"
+     fid="f4"
+     lineno="417"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_450" name="mpfr_overflow_p"
+     ponyname="mpfr_overflow_p"
+     fid="f4"
+     lineno="418"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_451" name="mpfr_divby0_p"
+     ponyname="mpfr_divby0_p"
+     fid="f4"
+     lineno="419"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_452" name="mpfr_nanflag_p"
+     ponyname="mpfr_nanflag_p"
+     fid="f4"
+     lineno="420"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_453" name="mpfr_inexflag_p"
+     ponyname="mpfr_inexflag_p"
+     fid="f4"
+     lineno="421"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_454" name="mpfr_erangeflag_p"
+     ponyname="mpfr_erangeflag_p"
+     fid="f4"
+     lineno="422"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_455" name="mpfr_flags_clear"
+     ponyname="mpfr_flags_clear"
+     fid="f4"
+     lineno="424"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_456" name="mpfr_flags_set"
+     ponyname="mpfr_flags_set"
+     fid="f4"
+     lineno="425"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_457" name="mpfr_flags_test"
+     ponyname="mpfr_flags_test"
+     fid="f4"
+     lineno="426"
+     rv="U32">
+     <useargs>
+       <usearg name="parg0" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_458" name="mpfr_flags_save"
+     ponyname="mpfr_flags_save"
+     fid="f4"
+     lineno="427"
+     rv="U32">
+     <useargs/>
+  </use>
+  <use id="_459" name="mpfr_flags_restore"
+     ponyname="mpfr_flags_restore"
+     fid="f4"
+     lineno="428"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="U32"/>
+       <usearg name="parg1" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_460" name="mpfr_check_range"
+     ponyname="mpfr_check_range"
+     fid="f4"
+     lineno="431"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_461" name="mpfr_init2"
+     ponyname="mpfr_init2"
+     fid="f4"
+     lineno="433"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_462" name="mpfr_init"
+     ponyname="mpfr_init"
+     fid="f4"
+     lineno="434"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_463" name="mpfr_clear"
+     ponyname="mpfr_clear"
+     fid="f4"
+     lineno="435"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_464" name="mpfr_inits2"
+     ponyname="mpfr_inits2"
+     fid="f4"
+     lineno="438"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="I64"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_465" name="mpfr_inits"
+     ponyname="mpfr_inits"
+     fid="f4"
+     lineno="440"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="..."/>
+     </useargs>
+  </use>
+  <use id="_466" name="mpfr_clears"
+     ponyname="mpfr_clears"
+     fid="f4"
+     lineno="442"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="..."/>
+     </useargs>
+  </use>
+  <use id="_467" name="mpfr_prec_round"
+     ponyname="mpfr_prec_round"
+     fid="f4"
+     lineno="444"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_468" name="mpfr_can_round"
+     ponyname="mpfr_can_round"
+     fid="f4"
+     lineno="445"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="I32"/>
+       <usearg name="parg4" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_469" name="mpfr_min_prec"
+     ponyname="mpfr_min_prec"
+     fid="f4"
+     lineno="447"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_470" name="mpfr_get_exp"
+     ponyname="mpfr_get_exp"
+     fid="f4"
+     lineno="449"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_471" name="mpfr_set_exp"
+     ponyname="mpfr_set_exp"
+     fid="f4"
+     lineno="450"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_472" name="mpfr_get_prec"
+     ponyname="mpfr_get_prec"
+     fid="f4"
+     lineno="451"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_473" name="mpfr_set_prec"
+     ponyname="mpfr_set_prec"
+     fid="f4"
+     lineno="452"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_474" name="mpfr_set_prec_raw"
+     ponyname="mpfr_set_prec_raw"
+     fid="f4"
+     lineno="453"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_475" name="mpfr_set_default_prec"
+     ponyname="mpfr_set_default_prec"
+     fid="f4"
+     lineno="454"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_476" name="mpfr_get_default_prec"
+     ponyname="mpfr_get_default_prec"
+     fid="f4"
+     lineno="455"
+     rv="I64">
+     <useargs/>
+  </use>
+  <use id="_477" name="mpfr_set_d"
+     ponyname="mpfr_set_d"
+     fid="f4"
+     lineno="457"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_478" name="mpfr_set_flt"
+     ponyname="mpfr_set_flt"
+     fid="f4"
+     lineno="458"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F32"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_479" name="mpfr_set_ld"
+     ponyname="mpfr_set_ld"
+     fid="f4"
+     lineno="465"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F128"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_480" name="mpfr_set_z"
+     ponyname="mpfr_set_z"
+     fid="f4"
+     lineno="470"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_481" name="mpfr_set_z_2exp"
+     ponyname="mpfr_set_z_2exp"
+     fid="f4"
+     lineno="471"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_482" name="mpfr_set_nan"
+     ponyname="mpfr_set_nan"
+     fid="f4"
+     lineno="473"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_483" name="mpfr_set_inf"
+     ponyname="mpfr_set_inf"
+     fid="f4"
+     lineno="474"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_484" name="mpfr_set_zero"
+     ponyname="mpfr_set_zero"
+     fid="f4"
+     lineno="475"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_485" name="mpfr_set_f"
+     ponyname="mpfr_set_f"
+     fid="f4"
+     lineno="479"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_486" name="mpfr_cmp_f"
+     ponyname="mpfr_cmp_f"
+     fid="f4"
+     lineno="480"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_487" name="mpfr_get_f"
+     ponyname="mpfr_get_f"
+     fid="f4"
+     lineno="481"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_488" name="mpfr_set_si"
+     ponyname="mpfr_set_si"
+     fid="f4"
+     lineno="483"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_489" name="mpfr_set_ui"
+     ponyname="mpfr_set_ui"
+     fid="f4"
+     lineno="484"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_490" name="mpfr_set_si_2exp"
+     ponyname="mpfr_set_si_2exp"
+     fid="f4"
+     lineno="485"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_491" name="mpfr_set_ui_2exp"
+     ponyname="mpfr_set_ui_2exp"
+     fid="f4"
+     lineno="486"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_492" name="mpfr_set_q"
+     ponyname="mpfr_set_q"
+     fid="f4"
+     lineno="490"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_493" name="mpfr_mul_q"
+     ponyname="mpfr_mul_q"
+     fid="f4"
+     lineno="491"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_494" name="mpfr_div_q"
+     ponyname="mpfr_div_q"
+     fid="f4"
+     lineno="492"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_495" name="mpfr_add_q"
+     ponyname="mpfr_add_q"
+     fid="f4"
+     lineno="493"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_496" name="mpfr_sub_q"
+     ponyname="mpfr_sub_q"
+     fid="f4"
+     lineno="494"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_497" name="mpfr_cmp_q"
+     ponyname="mpfr_cmp_q"
+     fid="f4"
+     lineno="495"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_498" name="mpfr_get_q"
+     ponyname="mpfr_get_q"
+     fid="f4"
+     lineno="496"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[S]"/>
+       <usearg name="f" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_499" name="mpfr_set_str"
+     ponyname="mpfr_set_str"
+     fid="f4"
+     lineno="498"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="String"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_500" name="mpfr_init_set_str"
+     ponyname="mpfr_init_set_str"
+     fid="f4"
+     lineno="499"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="String"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_501" name="mpfr_set4"
+     ponyname="mpfr_set4"
+     fid="f4"
+     lineno="501"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_502" name="mpfr_abs"
+     ponyname="mpfr_abs"
+     fid="f4"
+     lineno="502"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_503" name="mpfr_set"
+     ponyname="mpfr_set"
+     fid="f4"
+     lineno="503"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_504" name="mpfr_neg"
+     ponyname="mpfr_neg"
+     fid="f4"
+     lineno="504"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_505" name="mpfr_signbit"
+     ponyname="mpfr_signbit"
+     fid="f4"
+     lineno="505"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_506" name="mpfr_setsign"
+     ponyname="mpfr_setsign"
+     fid="f4"
+     lineno="506"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_507" name="mpfr_copysign"
+     ponyname="mpfr_copysign"
+     fid="f4"
+     lineno="507"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_508" name="mpfr_get_z_2exp"
+     ponyname="mpfr_get_z_2exp"
+     fid="f4"
+     lineno="510"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_509" name="mpfr_get_flt"
+     ponyname="mpfr_get_flt"
+     fid="f4"
+     lineno="511"
+     rv="F32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_510" name="mpfr_get_d"
+     ponyname="mpfr_get_d"
+     fid="f4"
+     lineno="512"
+     rv="F64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_511" name="mpfr_get_ld"
+     ponyname="mpfr_get_ld"
+     fid="f4"
+     lineno="517"
+     rv="F128">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_512" name="mpfr_get_d1"
+     ponyname="mpfr_get_d1"
+     fid="f4"
+     lineno="518"
+     rv="F64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_513" name="mpfr_get_d_2exp"
+     ponyname="mpfr_get_d_2exp"
+     fid="f4"
+     lineno="519"
+     rv="F64">
+     <useargs>
+       <usearg name="parg0" type="Pointer[I64]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_514" name="mpfr_get_ld_2exp"
+     ponyname="mpfr_get_ld_2exp"
+     fid="f4"
+     lineno="520"
+     rv="F128">
+     <useargs>
+       <usearg name="parg0" type="Pointer[I64]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_515" name="mpfr_frexp"
+     ponyname="mpfr_frexp"
+     fid="f4"
+     lineno="521"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="Pointer[I64]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_516" name="mpfr_get_si"
+     ponyname="mpfr_get_si"
+     fid="f4"
+     lineno="522"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_517" name="mpfr_get_ui"
+     ponyname="mpfr_get_ui"
+     fid="f4"
+     lineno="523"
+     rv="U64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_518" name="mpfr_get_str_ndigits"
+     ponyname="mpfr_get_str_ndigits"
+     fid="f4"
+     lineno="524"
+     rv="U64">
+     <useargs>
+       <usearg name="parg0" type="I32"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_519" name="mpfr_get_str"
+     ponyname="mpfr_get_str"
+     fid="f4"
+     lineno="525"
+     rv="String">
+     <useargs>
+       <usearg name="parg0" type="String"/>
+       <usearg name="parg1" type="Pointer[I64]"/>
+       <usearg name="parg2" type="I32"/>
+       <usearg name="parg3" type="U64"/>
+       <usearg name="parg4" type="NullablePointer[S]"/>
+       <usearg name="parg5" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_520" name="mpfr_get_z"
+     ponyname="mpfr_get_z"
+     fid="f4"
+     lineno="527"
+     rv="I32">
+     <useargs>
+       <usearg name="z" type="NullablePointer[S]"/>
+       <usearg name="f" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_521" name="mpfr_free_str"
+     ponyname="mpfr_free_str"
+     fid="f4"
+     lineno="529"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="String"/>
+     </useargs>
+  </use>
+  <use id="_522" name="mpfr_urandom"
+     ponyname="mpfr_urandom"
+     fid="f4"
+     lineno="531"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_523" name="mpfr_grandom"
+     ponyname="mpfr_grandom"
+     fid="f4"
+     lineno="535"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_524" name="mpfr_nrandom"
+     ponyname="mpfr_nrandom"
+     fid="f4"
+     lineno="537"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_525" name="mpfr_erandom"
+     ponyname="mpfr_erandom"
+     fid="f4"
+     lineno="538"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_526" name="mpfr_urandomb"
+     ponyname="mpfr_urandomb"
+     fid="f4"
+     lineno="539"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_527" name="mpfr_nextabove"
+     ponyname="mpfr_nextabove"
+     fid="f4"
+     lineno="541"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_528" name="mpfr_nextbelow"
+     ponyname="mpfr_nextbelow"
+     fid="f4"
+     lineno="542"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_529" name="mpfr_nexttoward"
+     ponyname="mpfr_nexttoward"
+     fid="f4"
+     lineno="543"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_530" name="mpfr_printf"
+     ponyname="mpfr_printf"
+     fid="f4"
+     lineno="546"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="String"/>
+       <usearg name="parg1" type="..."/>
+     </useargs>
+  </use>
+  <use id="_531" name="mpfr_asprintf"
+     ponyname="mpfr_asprintf"
+     fid="f4"
+     lineno="547"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="Array[String]"/>
+       <usearg name="parg1" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_532" name="mpfr_sprintf"
+     ponyname="mpfr_sprintf"
+     fid="f4"
+     lineno="548"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="String"/>
+       <usearg name="parg1" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_533" name="mpfr_snprintf"
+     ponyname="mpfr_snprintf"
+     fid="f4"
+     lineno="549"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="String"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="String"/>
+       <usearg name="parg3" type="..."/>
+     </useargs>
+  </use>
+  <use id="_534" name="mpfr_pow"
+     ponyname="mpfr_pow"
+     fid="f4"
+     lineno="552"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_535" name="mpfr_pow_si"
+     ponyname="mpfr_pow_si"
+     fid="f4"
+     lineno="553"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_536" name="mpfr_pow_ui"
+     ponyname="mpfr_pow_ui"
+     fid="f4"
+     lineno="554"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_537" name="mpfr_ui_pow_ui"
+     ponyname="mpfr_ui_pow_ui"
+     fid="f4"
+     lineno="556"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_538" name="mpfr_ui_pow"
+     ponyname="mpfr_ui_pow"
+     fid="f4"
+     lineno="558"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_539" name="mpfr_pow_z"
+     ponyname="mpfr_pow_z"
+     fid="f4"
+     lineno="560"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_540" name="mpfr_sqrt"
+     ponyname="mpfr_sqrt"
+     fid="f4"
+     lineno="562"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_541" name="mpfr_sqrt_ui"
+     ponyname="mpfr_sqrt_ui"
+     fid="f4"
+     lineno="563"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_542" name="mpfr_rec_sqrt"
+     ponyname="mpfr_rec_sqrt"
+     fid="f4"
+     lineno="564"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_543" name="mpfr_add"
+     ponyname="mpfr_add"
+     fid="f4"
+     lineno="566"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_544" name="mpfr_sub"
+     ponyname="mpfr_sub"
+     fid="f4"
+     lineno="567"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_545" name="mpfr_mul"
+     ponyname="mpfr_mul"
+     fid="f4"
+     lineno="568"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_546" name="mpfr_div"
+     ponyname="mpfr_div"
+     fid="f4"
+     lineno="569"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_547" name="mpfr_add_ui"
+     ponyname="mpfr_add_ui"
+     fid="f4"
+     lineno="571"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_548" name="mpfr_sub_ui"
+     ponyname="mpfr_sub_ui"
+     fid="f4"
+     lineno="573"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_549" name="mpfr_ui_sub"
+     ponyname="mpfr_ui_sub"
+     fid="f4"
+     lineno="575"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_550" name="mpfr_mul_ui"
+     ponyname="mpfr_mul_ui"
+     fid="f4"
+     lineno="577"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_551" name="mpfr_div_ui"
+     ponyname="mpfr_div_ui"
+     fid="f4"
+     lineno="579"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_552" name="mpfr_ui_div"
+     ponyname="mpfr_ui_div"
+     fid="f4"
+     lineno="581"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_553" name="mpfr_add_si"
+     ponyname="mpfr_add_si"
+     fid="f4"
+     lineno="584"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_554" name="mpfr_sub_si"
+     ponyname="mpfr_sub_si"
+     fid="f4"
+     lineno="585"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_555" name="mpfr_si_sub"
+     ponyname="mpfr_si_sub"
+     fid="f4"
+     lineno="586"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_556" name="mpfr_mul_si"
+     ponyname="mpfr_mul_si"
+     fid="f4"
+     lineno="587"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_557" name="mpfr_div_si"
+     ponyname="mpfr_div_si"
+     fid="f4"
+     lineno="588"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_558" name="mpfr_si_div"
+     ponyname="mpfr_si_div"
+     fid="f4"
+     lineno="589"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_559" name="mpfr_add_d"
+     ponyname="mpfr_add_d"
+     fid="f4"
+     lineno="591"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="F64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_560" name="mpfr_sub_d"
+     ponyname="mpfr_sub_d"
+     fid="f4"
+     lineno="592"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="F64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_561" name="mpfr_d_sub"
+     ponyname="mpfr_d_sub"
+     fid="f4"
+     lineno="593"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_562" name="mpfr_mul_d"
+     ponyname="mpfr_mul_d"
+     fid="f4"
+     lineno="594"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="F64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_563" name="mpfr_div_d"
+     ponyname="mpfr_div_d"
+     fid="f4"
+     lineno="595"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="F64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_564" name="mpfr_d_div"
+     ponyname="mpfr_d_div"
+     fid="f4"
+     lineno="596"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_565" name="mpfr_sqr"
+     ponyname="mpfr_sqr"
+     fid="f4"
+     lineno="598"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_566" name="mpfr_const_pi"
+     ponyname="mpfr_const_pi"
+     fid="f4"
+     lineno="600"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_567" name="mpfr_const_log2"
+     ponyname="mpfr_const_log2"
+     fid="f4"
+     lineno="601"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_568" name="mpfr_const_euler"
+     ponyname="mpfr_const_euler"
+     fid="f4"
+     lineno="602"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_569" name="mpfr_const_catalan"
+     ponyname="mpfr_const_catalan"
+     fid="f4"
+     lineno="603"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_570" name="mpfr_agm"
+     ponyname="mpfr_agm"
+     fid="f4"
+     lineno="605"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_571" name="mpfr_log"
+     ponyname="mpfr_log"
+     fid="f4"
+     lineno="607"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_572" name="mpfr_log2"
+     ponyname="mpfr_log2"
+     fid="f4"
+     lineno="608"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_573" name="mpfr_log10"
+     ponyname="mpfr_log10"
+     fid="f4"
+     lineno="609"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_574" name="mpfr_log1p"
+     ponyname="mpfr_log1p"
+     fid="f4"
+     lineno="610"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_575" name="mpfr_log_ui"
+     ponyname="mpfr_log_ui"
+     fid="f4"
+     lineno="611"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_576" name="mpfr_exp"
+     ponyname="mpfr_exp"
+     fid="f4"
+     lineno="613"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_577" name="mpfr_exp2"
+     ponyname="mpfr_exp2"
+     fid="f4"
+     lineno="614"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_578" name="mpfr_exp10"
+     ponyname="mpfr_exp10"
+     fid="f4"
+     lineno="615"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_579" name="mpfr_expm1"
+     ponyname="mpfr_expm1"
+     fid="f4"
+     lineno="616"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_580" name="mpfr_eint"
+     ponyname="mpfr_eint"
+     fid="f4"
+     lineno="617"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_581" name="mpfr_li2"
+     ponyname="mpfr_li2"
+     fid="f4"
+     lineno="618"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_582" name="mpfr_cmp"
+     ponyname="mpfr_cmp"
+     fid="f4"
+     lineno="620"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_583" name="mpfr_cmp3"
+     ponyname="mpfr_cmp3"
+     fid="f4"
+     lineno="621"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_584" name="mpfr_cmp_d"
+     ponyname="mpfr_cmp_d"
+     fid="f4"
+     lineno="622"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F64"/>
+     </useargs>
+  </use>
+  <use id="_585" name="mpfr_cmp_ld"
+     ponyname="mpfr_cmp_ld"
+     fid="f4"
+     lineno="623"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="F128"/>
+     </useargs>
+  </use>
+  <use id="_586" name="mpfr_cmp_ui"
+     ponyname="mpfr_cmp_ui"
+     fid="f4"
+     lineno="624"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_587" name="mpfr_cmp_si"
+     ponyname="mpfr_cmp_si"
+     fid="f4"
+     lineno="625"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_588" name="mpfr_cmp_ui_2exp"
+     ponyname="mpfr_cmp_ui_2exp"
+     fid="f4"
+     lineno="626"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_589" name="mpfr_cmp_si_2exp"
+     ponyname="mpfr_cmp_si_2exp"
+     fid="f4"
+     lineno="627"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_590" name="mpfr_cmpabs"
+     ponyname="mpfr_cmpabs"
+     fid="f4"
+     lineno="628"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_591" name="mpfr_cmpabs_ui"
+     ponyname="mpfr_cmpabs_ui"
+     fid="f4"
+     lineno="629"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_592" name="mpfr_reldiff"
+     ponyname="mpfr_reldiff"
+     fid="f4"
+     lineno="630"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_593" name="mpfr_eq"
+     ponyname="mpfr_eq"
+     fid="f4"
+     lineno="632"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_594" name="mpfr_sgn"
+     ponyname="mpfr_sgn"
+     fid="f4"
+     lineno="633"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_595" name="mpfr_mul_2exp"
+     ponyname="mpfr_mul_2exp"
+     fid="f4"
+     lineno="635"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_596" name="mpfr_div_2exp"
+     ponyname="mpfr_div_2exp"
+     fid="f4"
+     lineno="637"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_597" name="mpfr_mul_2ui"
+     ponyname="mpfr_mul_2ui"
+     fid="f4"
+     lineno="639"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_598" name="mpfr_div_2ui"
+     ponyname="mpfr_div_2ui"
+     fid="f4"
+     lineno="641"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_599" name="mpfr_mul_2si"
+     ponyname="mpfr_mul_2si"
+     fid="f4"
+     lineno="643"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_600" name="mpfr_div_2si"
+     ponyname="mpfr_div_2si"
+     fid="f4"
+     lineno="644"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_601" name="mpfr_rint"
+     ponyname="mpfr_rint"
+     fid="f4"
+     lineno="646"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_602" name="mpfr_roundeven"
+     ponyname="mpfr_roundeven"
+     fid="f4"
+     lineno="647"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_603" name="mpfr_round"
+     ponyname="mpfr_round"
+     fid="f4"
+     lineno="648"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_604" name="mpfr_trunc"
+     ponyname="mpfr_trunc"
+     fid="f4"
+     lineno="649"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_605" name="mpfr_ceil"
+     ponyname="mpfr_ceil"
+     fid="f4"
+     lineno="650"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_606" name="mpfr_floor"
+     ponyname="mpfr_floor"
+     fid="f4"
+     lineno="651"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_607" name="mpfr_rint_roundeven"
+     ponyname="mpfr_rint_roundeven"
+     fid="f4"
+     lineno="652"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_608" name="mpfr_rint_round"
+     ponyname="mpfr_rint_round"
+     fid="f4"
+     lineno="653"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_609" name="mpfr_rint_trunc"
+     ponyname="mpfr_rint_trunc"
+     fid="f4"
+     lineno="654"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_610" name="mpfr_rint_ceil"
+     ponyname="mpfr_rint_ceil"
+     fid="f4"
+     lineno="655"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_611" name="mpfr_rint_floor"
+     ponyname="mpfr_rint_floor"
+     fid="f4"
+     lineno="656"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_612" name="mpfr_frac"
+     ponyname="mpfr_frac"
+     fid="f4"
+     lineno="657"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_613" name="mpfr_modf"
+     ponyname="mpfr_modf"
+     fid="f4"
+     lineno="658"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_614" name="mpfr_remquo"
+     ponyname="mpfr_remquo"
+     fid="f4"
+     lineno="659"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[I64]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_615" name="mpfr_remainder"
+     ponyname="mpfr_remainder"
+     fid="f4"
+     lineno="661"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_616" name="mpfr_fmod"
+     ponyname="mpfr_fmod"
+     fid="f4"
+     lineno="663"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_617" name="mpfr_fmodquo"
+     ponyname="mpfr_fmodquo"
+     fid="f4"
+     lineno="664"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[I64]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_618" name="mpfr_fits_ulong_p"
+     ponyname="mpfr_fits_ulong_p"
+     fid="f4"
+     lineno="667"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_619" name="mpfr_fits_slong_p"
+     ponyname="mpfr_fits_slong_p"
+     fid="f4"
+     lineno="668"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_620" name="mpfr_fits_uint_p"
+     ponyname="mpfr_fits_uint_p"
+     fid="f4"
+     lineno="669"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_621" name="mpfr_fits_sint_p"
+     ponyname="mpfr_fits_sint_p"
+     fid="f4"
+     lineno="670"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_622" name="mpfr_fits_ushort_p"
+     ponyname="mpfr_fits_ushort_p"
+     fid="f4"
+     lineno="671"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_623" name="mpfr_fits_sshort_p"
+     ponyname="mpfr_fits_sshort_p"
+     fid="f4"
+     lineno="672"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_624" name="mpfr_fits_uintmax_p"
+     ponyname="mpfr_fits_uintmax_p"
+     fid="f4"
+     lineno="673"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_625" name="mpfr_fits_intmax_p"
+     ponyname="mpfr_fits_intmax_p"
+     fid="f4"
+     lineno="674"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_626" name="mpfr_extract"
+     ponyname="mpfr_extract"
+     fid="f4"
+     lineno="676"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_627" name="mpfr_swap"
+     ponyname="mpfr_swap"
+     fid="f4"
+     lineno="677"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_628" name="mpfr_dump"
+     ponyname="mpfr_dump"
+     fid="f4"
+     lineno="678"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_629" name="mpfr_nan_p"
+     ponyname="mpfr_nan_p"
+     fid="f4"
+     lineno="680"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_630" name="mpfr_inf_p"
+     ponyname="mpfr_inf_p"
+     fid="f4"
+     lineno="681"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_631" name="mpfr_number_p"
+     ponyname="mpfr_number_p"
+     fid="f4"
+     lineno="682"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_632" name="mpfr_integer_p"
+     ponyname="mpfr_integer_p"
+     fid="f4"
+     lineno="683"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_633" name="mpfr_zero_p"
+     ponyname="mpfr_zero_p"
+     fid="f4"
+     lineno="684"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_634" name="mpfr_regular_p"
+     ponyname="mpfr_regular_p"
+     fid="f4"
+     lineno="685"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_635" name="mpfr_greater_p"
+     ponyname="mpfr_greater_p"
+     fid="f4"
+     lineno="687"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_636" name="mpfr_greaterequal_p"
+     ponyname="mpfr_greaterequal_p"
+     fid="f4"
+     lineno="688"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_637" name="mpfr_less_p"
+     ponyname="mpfr_less_p"
+     fid="f4"
+     lineno="689"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_638" name="mpfr_lessequal_p"
+     ponyname="mpfr_lessequal_p"
+     fid="f4"
+     lineno="690"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_639" name="mpfr_lessgreater_p"
+     ponyname="mpfr_lessgreater_p"
+     fid="f4"
+     lineno="691"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_640" name="mpfr_equal_p"
+     ponyname="mpfr_equal_p"
+     fid="f4"
+     lineno="692"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_641" name="mpfr_unordered_p"
+     ponyname="mpfr_unordered_p"
+     fid="f4"
+     lineno="693"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_642" name="mpfr_atanh"
+     ponyname="mpfr_atanh"
+     fid="f4"
+     lineno="695"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_643" name="mpfr_acosh"
+     ponyname="mpfr_acosh"
+     fid="f4"
+     lineno="696"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_644" name="mpfr_asinh"
+     ponyname="mpfr_asinh"
+     fid="f4"
+     lineno="697"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_645" name="mpfr_cosh"
+     ponyname="mpfr_cosh"
+     fid="f4"
+     lineno="698"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_646" name="mpfr_sinh"
+     ponyname="mpfr_sinh"
+     fid="f4"
+     lineno="699"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_647" name="mpfr_tanh"
+     ponyname="mpfr_tanh"
+     fid="f4"
+     lineno="700"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_648" name="mpfr_sinh_cosh"
+     ponyname="mpfr_sinh_cosh"
+     fid="f4"
+     lineno="701"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_649" name="mpfr_sech"
+     ponyname="mpfr_sech"
+     fid="f4"
+     lineno="704"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_650" name="mpfr_csch"
+     ponyname="mpfr_csch"
+     fid="f4"
+     lineno="705"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_651" name="mpfr_coth"
+     ponyname="mpfr_coth"
+     fid="f4"
+     lineno="706"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_652" name="mpfr_acos"
+     ponyname="mpfr_acos"
+     fid="f4"
+     lineno="708"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_653" name="mpfr_asin"
+     ponyname="mpfr_asin"
+     fid="f4"
+     lineno="709"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_654" name="mpfr_atan"
+     ponyname="mpfr_atan"
+     fid="f4"
+     lineno="710"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_655" name="mpfr_sin"
+     ponyname="mpfr_sin"
+     fid="f4"
+     lineno="711"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_656" name="mpfr_sin_cos"
+     ponyname="mpfr_sin_cos"
+     fid="f4"
+     lineno="712"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_657" name="mpfr_cos"
+     ponyname="mpfr_cos"
+     fid="f4"
+     lineno="713"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_658" name="mpfr_tan"
+     ponyname="mpfr_tan"
+     fid="f4"
+     lineno="714"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_659" name="mpfr_atan2"
+     ponyname="mpfr_atan2"
+     fid="f4"
+     lineno="715"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_660" name="mpfr_sec"
+     ponyname="mpfr_sec"
+     fid="f4"
+     lineno="716"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_661" name="mpfr_csc"
+     ponyname="mpfr_csc"
+     fid="f4"
+     lineno="717"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_662" name="mpfr_cot"
+     ponyname="mpfr_cot"
+     fid="f4"
+     lineno="718"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_663" name="mpfr_hypot"
+     ponyname="mpfr_hypot"
+     fid="f4"
+     lineno="720"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_664" name="mpfr_erf"
+     ponyname="mpfr_erf"
+     fid="f4"
+     lineno="721"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_665" name="mpfr_erfc"
+     ponyname="mpfr_erfc"
+     fid="f4"
+     lineno="722"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_666" name="mpfr_cbrt"
+     ponyname="mpfr_cbrt"
+     fid="f4"
+     lineno="723"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_667" name="mpfr_root"
+     ponyname="mpfr_root"
+     fid="f4"
+     lineno="727"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_668" name="mpfr_rootn_ui"
+     ponyname="mpfr_rootn_ui"
+     fid="f4"
+     lineno="729"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_669" name="mpfr_gamma"
+     ponyname="mpfr_gamma"
+     fid="f4"
+     lineno="731"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_670" name="mpfr_gamma_inc"
+     ponyname="mpfr_gamma_inc"
+     fid="f4"
+     lineno="732"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_671" name="mpfr_beta"
+     ponyname="mpfr_beta"
+     fid="f4"
+     lineno="734"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_672" name="mpfr_lngamma"
+     ponyname="mpfr_lngamma"
+     fid="f4"
+     lineno="735"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_673" name="mpfr_lgamma"
+     ponyname="mpfr_lgamma"
+     fid="f4"
+     lineno="736"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[I32]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_674" name="mpfr_digamma"
+     ponyname="mpfr_digamma"
+     fid="f4"
+     lineno="737"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_675" name="mpfr_zeta"
+     ponyname="mpfr_zeta"
+     fid="f4"
+     lineno="738"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_676" name="mpfr_zeta_ui"
+     ponyname="mpfr_zeta_ui"
+     fid="f4"
+     lineno="739"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_677" name="mpfr_fac_ui"
+     ponyname="mpfr_fac_ui"
+     fid="f4"
+     lineno="740"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="U64"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_678" name="mpfr_j0"
+     ponyname="mpfr_j0"
+     fid="f4"
+     lineno="741"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_679" name="mpfr_j1"
+     ponyname="mpfr_j1"
+     fid="f4"
+     lineno="742"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_680" name="mpfr_jn"
+     ponyname="mpfr_jn"
+     fid="f4"
+     lineno="743"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_681" name="mpfr_y0"
+     ponyname="mpfr_y0"
+     fid="f4"
+     lineno="744"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_682" name="mpfr_y1"
+     ponyname="mpfr_y1"
+     fid="f4"
+     lineno="745"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_683" name="mpfr_yn"
+     ponyname="mpfr_yn"
+     fid="f4"
+     lineno="746"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I64"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_684" name="mpfr_ai"
+     ponyname="mpfr_ai"
+     fid="f4"
+     lineno="748"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_685" name="mpfr_min"
+     ponyname="mpfr_min"
+     fid="f4"
+     lineno="750"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_686" name="mpfr_max"
+     ponyname="mpfr_max"
+     fid="f4"
+     lineno="751"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_687" name="mpfr_dim"
+     ponyname="mpfr_dim"
+     fid="f4"
+     lineno="752"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_688" name="mpfr_mul_z"
+     ponyname="mpfr_mul_z"
+     fid="f4"
+     lineno="754"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_689" name="mpfr_div_z"
+     ponyname="mpfr_div_z"
+     fid="f4"
+     lineno="755"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_690" name="mpfr_add_z"
+     ponyname="mpfr_add_z"
+     fid="f4"
+     lineno="756"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_691" name="mpfr_sub_z"
+     ponyname="mpfr_sub_z"
+     fid="f4"
+     lineno="757"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_692" name="mpfr_z_sub"
+     ponyname="mpfr_z_sub"
+     fid="f4"
+     lineno="758"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_693" name="mpfr_cmp_z"
+     ponyname="mpfr_cmp_z"
+     fid="f4"
+     lineno="759"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_694" name="mpfr_fma"
+     ponyname="mpfr_fma"
+     fid="f4"
+     lineno="761"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_695" name="mpfr_fms"
+     ponyname="mpfr_fms"
+     fid="f4"
+     lineno="763"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_696" name="mpfr_fmma"
+     ponyname="mpfr_fmma"
+     fid="f4"
+     lineno="765"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="NullablePointer[S]"/>
+       <usearg name="parg5" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_697" name="mpfr_fmms"
+     ponyname="mpfr_fmms"
+     fid="f4"
+     lineno="767"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+       <usearg name="parg2" type="NullablePointer[S]"/>
+       <usearg name="parg3" type="NullablePointer[S]"/>
+       <usearg name="parg4" type="NullablePointer[S]"/>
+       <usearg name="parg5" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_698" name="mpfr_sum"
+     ponyname="mpfr_sum"
+     fid="f4"
+     lineno="769"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[NullablePointer[S]]"/>
+       <usearg name="parg2" type="U64"/>
+       <usearg name="parg3" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_699" name="mpfr_dot"
+     ponyname="mpfr_dot"
+     fid="f4"
+     lineno="771"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[NullablePointer[S]]"/>
+       <usearg name="parg2" type="Pointer[NullablePointer[S]]"/>
+       <usearg name="parg3" type="U64"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_700" name="mpfr_free_cache"
+     ponyname="mpfr_free_cache"
+     fid="f4"
+     lineno="774"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_701" name="mpfr_free_cache2"
+     ponyname="mpfr_free_cache2"
+     fid="f4"
+     lineno="775"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_702" name="mpfr_free_pool"
+     ponyname="mpfr_free_pool"
+     fid="f4"
+     lineno="776"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_703" name="mpfr_mp_memory_cleanup"
+     ponyname="mpfr_mp_memory_cleanup"
+     fid="f4"
+     lineno="777"
+     rv="I32">
+     <useargs/>
+  </use>
+  <use id="_704" name="mpfr_subnormalize"
+     ponyname="mpfr_subnormalize"
+     fid="f4"
+     lineno="779"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_705" name="mpfr_strtofr"
+     ponyname="mpfr_strtofr"
+     fid="f4"
+     lineno="781"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="String"/>
+       <usearg name="parg2" type="Array[String]"/>
+       <usearg name="parg3" type="I32"/>
+       <usearg name="parg4" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_706" name="mpfr_round_nearest_away_begin"
+     ponyname="mpfr_round_nearest_away_begin"
+     fid="f4"
+     lineno="784"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_707" name="mpfr_round_nearest_away_end"
+     ponyname="mpfr_round_nearest_away_end"
+     fid="f4"
+     lineno="785"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_708" name="mpfr_custom_get_size"
+     ponyname="mpfr_custom_get_size"
+     fid="f4"
+     lineno="787"
+     rv="U64">
+     <useargs>
+       <usearg name="parg0" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_709" name="mpfr_custom_init"
+     ponyname="mpfr_custom_init"
+     fid="f4"
+     lineno="788"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="Pointer[None]"/>
+       <usearg name="parg1" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_710" name="mpfr_custom_get_significand"
+     ponyname="mpfr_custom_get_significand"
+     fid="f4"
+     lineno="790"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_711" name="mpfr_custom_get_exp"
+     ponyname="mpfr_custom_get_exp"
+     fid="f4"
+     lineno="791"
+     rv="I64">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_712" name="mpfr_custom_move"
+     ponyname="mpfr_custom_move"
+     fid="f4"
+     lineno="792"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_713" name="mpfr_custom_init_set"
+     ponyname="mpfr_custom_init_set"
+     fid="f4"
+     lineno="793"
+     rv="None">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="I32"/>
+       <usearg name="parg2" type="I64"/>
+       <usearg name="parg3" type="I64"/>
+       <usearg name="parg4" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_714" name="mpfr_custom_get_kind"
+     ponyname="mpfr_custom_get_kind"
+     fid="f4"
+     lineno="795"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+     </useargs>
+  </use>
+  <use id="_715" name="mpfr_total_order_p"
+     ponyname="mpfr_total_order_p"
+     fid="f4"
+     lineno="797"
+     rv="I32">
+     <useargs>
+       <usearg name="parg0" type="NullablePointer[S]"/>
+       <usearg name="parg1" type="NullablePointer[S]"/>
+     </useargs>
+  </use></uses>
+</castxml2pony>
+

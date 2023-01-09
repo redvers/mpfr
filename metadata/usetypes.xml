@@ -1,0 +1,46 @@
+<typedefs>
+  <typedef name="String"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String iso^"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    decl="  var "
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    decl="  var "
+    rvtype="Pointer[Pointer[U8]]"/>
+
+<typedef name="Pointer[NullablePointer[S]]" ponytypein="Pointer[NullablePointer[Smpfr]] tag" ponytypeinconv="" ponytypeout="Pointer[NullablePointer[Smpfr]]" structtype="Pointer[NullablePointer[Smpfr]]" structdef="Pointer[NullablePointer[Smpfr]]" argtype="Pointer[NullablePointer[Smpfr]] tag" rvtype="Pointer[NullablePointer[Smpfr]]" decl="  var "/>
+<typedef name="F64" ponytypein="F64" ponytypeinconv="" ponytypeout="F64" structtype="F64" structdef="F64(0)" argtype="F64" rvtype="F64" decl="  var "/>
+<typedef name="F32" ponytypein="F32" ponytypeinconv="" ponytypeout="F32" structtype="F32" structdef="F32(0)" argtype="F32" rvtype="F32" decl="  var "/>
+<typedef name="Pointer[None]" ponytypein="Pointer[None] tag" ponytypeinconv="" ponytypeout="Pointer[None]" structtype="Pointer[None]" structdef="Pointer[None]" argtype="Pointer[None] tag" rvtype="Pointer[None]" decl="  var "/>
+<typedef name="I32" ponytypein="I32" ponytypeinconv="" ponytypeout="I32" structtype="I32" structdef="I32(0)" argtype="I32" rvtype="I32" decl="  var "/>
+<typedef name="U32" ponytypein="U32" ponytypeinconv="" ponytypeout="U32" structtype="U32" structdef="U32(0)" argtype="U32" rvtype="U32" decl="  var "/>
+<typedef name="Pointer[I64]" ponytypein="Pointer[I64] tag" ponytypeinconv="" ponytypeout="Pointer[I64]" structtype="Pointer[I64]" structdef="Pointer[I64]" argtype="Pointer[I64] tag" rvtype="Pointer[I64]" decl="  var "/>
+<typedef name="I64" ponytypein="I64" ponytypeinconv="" ponytypeout="I64" structtype="I64" structdef="I64(0)" argtype="I64" rvtype="I64" decl="  var "/>
+<typedef name="U64" ponytypein="U64" ponytypeinconv="" ponytypeout="U64" structtype="U64" structdef="U64(0)" argtype="U64" rvtype="U64" decl="  var "/>
+<typedef name="F128" ponytypein="F128" ponytypeinconv="" ponytypeout="F128" structtype="F128" structdef="F128(0)" argtype="F128" rvtype="F128" decl="  var "/>
+<typedef name="Pointer[I32]" ponytypein="Pointer[I32] tag" ponytypeinconv="" ponytypeout="Pointer[I32]" structtype="Pointer[I32]" structdef="Pointer[I32]" argtype="Pointer[I32] tag" rvtype="Pointer[I32]" decl="  var "/>
+<typedef name="NullablePointer[S]" ponytypein="NullablePointer[Smpfr] tag" ponytypeinconv="" ponytypeout="NullablePointer[Smpfr]" structtype="NullablePointer[Smpfr]" structdef="NullablePointer[Smpfr].none()" argtype="NullablePointer[Smpfr] tag" rvtype="NullablePointer[Smpfr]" decl="  var "/>
+<typedef name="..." ponytypein="... tag" ponytypeinconv="" ponytypeout="..." structtype="..." structdef="..." argtype="... tag" rvtype="..." decl="  embed "/>
+<typedef name="None" ponytypein="None tag" ponytypeinconv="" ponytypeout="None" structtype="None" structdef="None" argtype="None tag" rvtype="None" decl="  embed "/></typedefs>
+
