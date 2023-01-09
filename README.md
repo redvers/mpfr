@@ -1,4 +1,4 @@
-# Postgres
+# mpfr
 
 Pony binding to GNU mpfr
 

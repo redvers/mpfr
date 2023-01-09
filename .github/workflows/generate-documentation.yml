@@ -27,7 +27,7 @@ jobs:
         with:
           site_url: "https://redvers.github.io/mpfr/"
           library_name: "mpfr"
-          docs_build_dir: "build/xml-docs"
+          docs_build_dir: "build/mpfr-docs"
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
